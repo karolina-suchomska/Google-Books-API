@@ -1,14 +1,73 @@
 .App {
-  text-align: center;
+  background-color: white;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  margin: 0 auto;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.Pictures {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;  
+  }
+
+a {
+  color: rgb(87, 45, 6);
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: 600;
+  }
+
+a:hover, a:active {
+  background-color: rgba(116, 70, 11, 0.144);
+  text-decoration: none;
+  color: rgb(87, 45, 6);
+}
+
+.container {
+  color: black;
+}
+
+.list {
+  display: grid;
+  margin: 20px 0 50px 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 1em;
+  color: black;
+  font-size: calc(5px + 2vmin);
+}
+
+.card {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  border: none;
+  overflow: hidden;
+}
+
+.desc {
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 10px;
+  /* width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
 }
