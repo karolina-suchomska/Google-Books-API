@@ -1,57 +1,37 @@
 .App {
-  background-color: white;
-  font-size: calc(10px + 2vmin);
-  color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(14, 14, 14);
   margin: 0 auto;
-
-}
-
-.Pictures {
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-ul {
-  list-style-type: none;  
-  }
-
-a {
-  color: rgb(87, 45, 6);
-  padding: 15px 25px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: calc(10px + 2vmin);
-  font-weight: 600;
-  }
-
-a:hover, a:active {
-  background-color: rgba(116, 70, 11, 0.144);
-  text-decoration: none;
-  color: rgb(87, 45, 6);
 }
 
-.container {
-  color: black;
+.heading {
+  background-color: rgb(143, 143, 143);
+  padding: 15px;
+  color: white;
+  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+.search {
+  padding: 10px;
 }
 
 .list {
-  display: grid;
   margin: 20px 0 50px 0;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 1fr;
-  grid-gap: 1em;
-  color: black;
   font-size: calc(5px + 2vmin);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: 100%;
   margin: 0 auto;
   padding: 15px;
   border: none;
-  overflow: hidden;
+  flex-direction: column;
 }
 
 .desc {
@@ -66,8 +46,4 @@ h2 {
 
 p {
   font-size: 10px;
-  /* width: 150px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; */
 }
