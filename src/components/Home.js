@@ -24,17 +24,25 @@ class Home extends Component {
         }
     }
 
+    // checks whether the user is on the bottom of the page
     componentDidMount() {
         window.onscroll = (e) => {
           if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             return (
                 this.handleMoreIndex(e),
                 wait(500)
-            );
+            )
           }
         }
     }
 
+    // increases the index value
+    handleMoreIndex = (e) => {
+        index = index + 10;
+        this.handleSubmit(e)           
+    }
+
+    // gets the value entered in the input
     handleSearch = e => {
         const value = e.target.value
         this.setState({
@@ -42,6 +50,7 @@ class Home extends Component {
         });
       }
 
+    // checks whether the word has been changed
     handleCheck = e => {
         if(index>0) {
             return (
@@ -52,17 +61,16 @@ class Home extends Component {
         this.handleSubmit(e);
     }
 
+    // gets results from API
     handleSubmit = e => {   
     const API = `https://www.googleapis.com/books/v1/volumes?q=${this.state.value}`;
 
-    if (e.preventDefault) e.preventDefault();
+    e.preventDefault();
     this.setState({ isLoading: true });
 
     axios.get(API+`&printType=books&startIndex=`+index)
         .then(results => {
-            console.log(results);
             if(index===0) {
-                console.log(index)
                 this.setState({
                     books: results.data.items,
                     isLoading: false,
@@ -86,12 +94,6 @@ class Home extends Component {
                 isLoading: false
             })
         });
-    }
-
-    handleMoreIndex = (e) => {
-        index = index + 10;
-        console.log("Index: "+index);
-        this.handleSubmit(e)           
     }
    
     render() {
