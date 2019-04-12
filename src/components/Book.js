@@ -10,7 +10,7 @@ const Book = (props) => {
                 <p>{((props.description) ? (props.description.substr(0, 55)+"...") : props.description)}</p>
             </div>
         </div>
-     );
+    );
 }
  
 export default Book;
