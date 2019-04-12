@@ -7,10 +7,10 @@ import Result from './Result';
 let index=0;
 
 function wait(ms) {
-    var d = new Date();
-    var d2 = null;
-    do { d2 = new Date(); }
-    while(d2-d < ms);
+    var x = new Date();
+    var y = null;
+    do { y = new Date(); }
+    while(y-x < ms);
 }
 
 class Home extends Component {
@@ -19,7 +19,6 @@ class Home extends Component {
         this.state = {
             books: [],
             value: '',
-            isLoading: false,
             error: false,
         }
     }
@@ -27,12 +26,12 @@ class Home extends Component {
     // checks whether the user is on the bottom of the page
     componentDidMount() {
         window.onscroll = (e) => {
-          if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-            return (
-                this.handleMoreIndex(e),
-                wait(500)
-            )
-          }
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                return (
+                    this.handleMoreIndex(e),
+                    wait(500)
+                )
+            }
         }
     }
 
@@ -44,11 +43,10 @@ class Home extends Component {
 
     // gets the value entered in the input
     handleSearch = e => {
-        const value = e.target.value
         this.setState({
-          value
+          value: e.target.value
         });
-      }
+    }
 
     // checks whether the word has been changed
     handleCheck = e => {
@@ -64,16 +62,14 @@ class Home extends Component {
     // gets results from API
     handleSubmit = e => {   
     const API = `https://www.googleapis.com/books/v1/volumes?q=${this.state.value}`;
+    const paramteresAPI = `&printType=books&startIndex=`;
 
     e.preventDefault();
-    this.setState({ isLoading: true });
-
-    axios.get(API+`&printType=books&startIndex=`+index)
+    axios.get(API+paramteresAPI+index)
         .then(results => {
             if(index===0) {
                 this.setState({
                     books: results.data.items,
-                    isLoading: false,
                 })
             }
             else if(index>0) {
@@ -84,14 +80,12 @@ class Home extends Component {
                     ...this.state.books,
                     ...nextBooks,
                 ],
-                isLoading: false,
                 });
             }
         })
         .catch(error => {
             this.setState({
                 error,
-                isLoading: false
             })
         });
     }

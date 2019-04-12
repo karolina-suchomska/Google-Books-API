@@ -16,8 +16,23 @@ h1 {
   margin: 0 auto;
 }
 
-.search {
-  padding: 10px;
+form {
+  display: flex;
+  margin: 1rem 10rem 0 10rem;
+}
+
+input[type="text"] {
+  flex: 8;
+  padding: 5px;
+  font-size: calc(5px + 2vmin);
+}
+
+button[type="submit"] {
+  flex: 2;
+  font-size: calc(5px + 2vmin);
+  background-color: rgb(143, 143, 143);
+  color: white;
+  border: none;
 }
 
 .list {

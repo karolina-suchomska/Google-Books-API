@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BookCard = (props) => { 
+const Book = (props) => { 
     
     return ( 
         <div className="card">
@@ -13,4 +13,4 @@ const BookCard = (props) => {
      );
 }
  
-export default BookCard;
+export default Book;

@@ -6,9 +6,9 @@ const Search = props => {
             <input 
                 type = "text"
                 onChange = {props.handleSearch}
-                placeholder = "Podaj tytuł ksiąki"
+                placeholder = "Enter title here"
             />
-            <button type="submit">Szukaj</button>
+            <button type="submit">Search</button>
         </form>
      );
 }
