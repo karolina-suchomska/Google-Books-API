@@ -18,7 +18,7 @@ h1 {
 
 form {
   display: flex;
-  margin: 1rem 10rem 0 10rem;
+  margin: calc(1rem + 1rem) calc(2rem + 1rem) 0 calc(2rem + 1rem);
 }
 
 input[type="text"] {
