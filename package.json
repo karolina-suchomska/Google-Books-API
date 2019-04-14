@@ -2,9 +2,10 @@
   "name": "google-books",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://karolina-suchomska.github.io/Google-Books-API",
+  "homepage": "http://karolina-suchomska.github.io/Google-Books-API",
   "dependencies": {
     "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
     "history": "^4.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
