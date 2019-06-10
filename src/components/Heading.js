@@ -2,9 +2,9 @@ import React from 'react';
 
 const Heading = () => {
     return ( 
-        <div className="heading">
+        <header>
             <h1>Google Books Search</h1>
-        </div>
+        </header>
      )
 }
  
