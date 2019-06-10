@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Style.css';
 import Heading from './Heading'
 import Home from './Home'
 
