@@ -21,20 +21,20 @@ header {
 form {
   display: flex;
   margin: calc(1rem + 1rem) calc(2rem + 1rem) 0 calc(2rem + 1rem);
-}
 
-input[type="text"] {
-  flex: 8;
-  padding: 5px;
-  font-size: calc(5px + 2vmin);
-}
-
-button[type="submit"] {
-  flex: 2;
-  font-size: calc(5px + 2vmin);
-  background-color: $bg_color;
-  color: $white;
-  border: none;
+  input[type="text"] {
+    flex: 8;
+    padding: 5px;
+    font-size: calc(5px + 2vmin);
+  }
+  
+  button[type="submit"] {
+    flex: 2;
+    font-size: calc(5px + 2vmin);
+    background-color: $bg_color;
+    color: $white;
+    border: none;
+  }
 }
 
 .list {
@@ -42,25 +42,26 @@ button[type="submit"] {
   font-size: calc(5px + 2vmin);
   display: flex;
   flex-wrap: wrap;
+
+  .card {
+    margin: 0 auto;
+    padding: 15px;
+    border: none;
+    flex-direction: column;
+
+    .desc {
+      width: 150px;
+      height: 200px;
+      padding: 10px;
+
+      h2 {
+        font-size: 15px;
+      }
+      
+      p {
+        font-size: 10px;
+      }
+    }
+  }
 }
 
-.card {
-  margin: 0 auto;
-  padding: 15px;
-  border: none;
-  flex-direction: column;
-}
-
-.desc {
-  width: 150px;
-  height: 200px;
-  padding: 10px;
-}
-
-h2 {
-  font-size: 15px;
-}
-
-p {
-  font-size: 10px;
-}
