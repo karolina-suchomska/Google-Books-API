@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './Style.css';
+import './styles/Style.scss';
 import Search from './Search';
 import Result from './Result';
 
