@@ -1,13 +1,15 @@
 {
-  "main.css": "/Google-Books-API/static/css/main.c55495cc.chunk.css",
-  "main.js": "/Google-Books-API/static/js/main.2fe77ec4.chunk.js",
-  "main.js.map": "/Google-Books-API/static/js/main.2fe77ec4.chunk.js.map",
-  "runtime~main.js": "/Google-Books-API/static/js/runtime~main.a027c759.js",
-  "runtime~main.js.map": "/Google-Books-API/static/js/runtime~main.a027c759.js.map",
-  "static/js/2.af534fb8.chunk.js": "/Google-Books-API/static/js/2.af534fb8.chunk.js",
-  "static/js/2.af534fb8.chunk.js.map": "/Google-Books-API/static/js/2.af534fb8.chunk.js.map",
-  "index.html": "/Google-Books-API/index.html",
-  "precache-manifest.19a2f8d48e6d72105e7a1f832d48aa46.js": "/Google-Books-API/precache-manifest.19a2f8d48e6d72105e7a1f832d48aa46.js",
-  "service-worker.js": "/Google-Books-API/service-worker.js",
-  "static/css/main.c55495cc.chunk.css.map": "/Google-Books-API/static/css/main.c55495cc.chunk.css.map"
+  "files": {
+    "main.css": "/Google-Books-API/static/css/main.7a9c78da.chunk.css",
+    "main.js": "/Google-Books-API/static/js/main.4a600c07.chunk.js",
+    "main.js.map": "/Google-Books-API/static/js/main.4a600c07.chunk.js.map",
+    "runtime~main.js": "/Google-Books-API/static/js/runtime~main.a027c759.js",
+    "runtime~main.js.map": "/Google-Books-API/static/js/runtime~main.a027c759.js.map",
+    "static/js/2.2f8137ed.chunk.js": "/Google-Books-API/static/js/2.2f8137ed.chunk.js",
+    "static/js/2.2f8137ed.chunk.js.map": "/Google-Books-API/static/js/2.2f8137ed.chunk.js.map",
+    "index.html": "/Google-Books-API/index.html",
+    "precache-manifest.dd0195e92971edf97c43641bbe0d0d1a.js": "/Google-Books-API/precache-manifest.dd0195e92971edf97c43641bbe0d0d1a.js",
+    "service-worker.js": "/Google-Books-API/service-worker.js",
+    "static/css/main.7a9c78da.chunk.css.map": "/Google-Books-API/static/css/main.7a9c78da.chunk.css.map"
+  }
 }
