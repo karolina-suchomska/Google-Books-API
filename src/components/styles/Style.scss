@@ -1,19 +1,21 @@
+@import './Variables.scss';
+
 .App {
-  background-color: rgb(255, 255, 255);
-  color: rgb(14, 14, 14);
+  background-color: $white;
+  color: $black;
   margin: 0 auto;
   text-align: center;
 }
 
-.heading {
-  background-color: rgb(143, 143, 143);
+header {
+  background-color: $bg_color;
   padding: 15px;
-  color: white;
+  color: $white;
   font-size: calc(10px + 2vmin);
-}
 
-h1 {
-  margin: 0 auto;
+  h1 {
+    margin: 0 auto;
+  }
 }
 
 form {
@@ -30,8 +32,8 @@ input[type="text"] {
 button[type="submit"] {
   flex: 2;
   font-size: calc(5px + 2vmin);
-  background-color: rgb(143, 143, 143);
-  color: white;
+  background-color: $bg_color;
+  color: $white;
   border: none;
 }
 
